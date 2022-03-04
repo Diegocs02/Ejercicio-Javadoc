@@ -17,7 +17,6 @@ public class Libro {
     /**
      * Propiedades pertenecientes a un libro
      */
-
     private String titulo; // Título del libro.
     private String autor; // Autor del libro.
     private int ejemplares; // Ejemplares del libro.
@@ -72,10 +71,20 @@ public class Libro {
         return ejemplares;
     }
 
+    /**
+     * Establece el número de ejemplares.
+     *
+     * @param ejemplares es el número de ejemplares de un libro.
+     */
     public void setEjemplares(int ejemplares) {
         this.ejemplares = ejemplares;
     }
 
+    /**
+     * Obtener el número de libros que han sido prestados.
+     *
+     * @return el número de libros prestados.
+     */
     public int getPrestados() {
         return prestados;
     }
