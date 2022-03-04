@@ -89,14 +89,29 @@ public class Libro {
         return prestados;
     }
 
+    /**
+     * Establece el número de libros que han sido prestados.
+     *
+     * @param prestados es el número de libros prestados.
+     */
     public void setPrestados(int prestados) {
         this.prestados = prestados;
     }
 
+    /**
+     * Obtener el título del libro.
+     *
+     * @return el título del libro.
+     */
     public String getTitulo() {
         return titulo;
     }
 
+    /**
+     * Establecer el título del libro
+     *
+     * @param titulo es el título o nombre que se le ha puesto al libro.
+     */
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
