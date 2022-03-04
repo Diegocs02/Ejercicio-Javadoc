@@ -116,6 +116,11 @@ public class Libro {
         this.titulo = titulo;
     }
 
+    /**
+     * Método para realizar el prestamo de un libro
+     *
+     * @return True si un libro ha sido prestado o false si no ha sido prestado.
+     */
     public boolean prestamo() {
         boolean prestado = true;
         if (prestados < ejemplares) {
@@ -126,6 +131,11 @@ public class Libro {
         return prestado;
     }
 
+    /**
+     * Método para realizar la devolución de un libro
+     *
+     * @return true si el libro se ha devuelto o false si no ha sido devuelto.
+     */
     public boolean devolucion() {
         boolean devuelto = true;
         if (prestados == 0) {
@@ -136,6 +146,12 @@ public class Libro {
         return devuelto;
     }
 
+    /**
+     * Método toString sobrescrito para mostrar los datos de la clase Libro.
+     *
+     * @return el titulo, el autor, el número de ejemplares y los libros que han
+     * sido prestados.
+     */
     @Override
     public String toString() {
         return "titulo: " + titulo + "\nautor: " + autor
